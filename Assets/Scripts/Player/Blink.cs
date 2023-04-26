@@ -15,7 +15,7 @@ public class Blink : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKey(KeyCode.Mouse1))
         {
             Vector3 blinkDirection = Vector3.zero;
 
@@ -39,8 +39,8 @@ public class Blink : MonoBehaviour
 
             if (blinkDirection != Vector3.zero)
             {
-                Vector3 teleportDestination = transform.position + blinkDirection.normalized * blinkDistance;
-                transform.position = teleportDestination;
+                Vector3 blinkDestination = transform.position + blinkDirection.normalized * blinkDistance;
+                transform.position = blinkDestination;
             }
         }
     }
