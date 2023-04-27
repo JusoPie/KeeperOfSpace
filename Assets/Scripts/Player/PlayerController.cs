@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     [Header("Shooting")]
     public Transform gun;
     public GameObject bullet;
+    public float fireRate = 1.0f;
+    private float nextFire = 0.0f;
 
     
 
@@ -42,7 +44,7 @@ public class PlayerController : MonoBehaviour
 
         // This is for shooting
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             Shoot();
         }
@@ -52,6 +54,7 @@ public class PlayerController : MonoBehaviour
 
     public void Shoot()
     {
+        nextFire = Time.time + fireRate;
         Instantiate(bullet, gun.transform.position, gun.transform.rotation);
         
     }

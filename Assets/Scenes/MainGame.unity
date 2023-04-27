@@ -5666,7 +5666,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966108464}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1966108467
 Camera:
   m_ObjectHideFlags: 0
@@ -5946,6 +5946,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 4077409430238052244, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
+      propertyPath: fireRate
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4077409430238052244, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
       propertyPath: playerSpeed
       value: 18.7
