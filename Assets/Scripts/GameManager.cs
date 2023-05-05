@@ -10,16 +10,16 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        gameManager = this;
-        //if (gameManager == null)
+        //gameManager = this;
+        if (gameManager == null)
         {
-            //DontDestroyOnLoad(gameObject);
-            //gameManager = this;
+            DontDestroyOnLoad(gameObject);
+            gameManager = this;
         }
 
-        //else if (gameManager != this) 
+        else if (gameManager != this) 
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
@@ -29,24 +29,5 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void ChangeLevel()
-    {
-        SceneManager.LoadScene("MainGame");
-
-    }
-
-    public void MenuScene() 
-    {
-        SceneManager.LoadScene("Menu Scene");
-    }
-
-    public void LoseScreen() 
-    {
-        SceneManager.LoadScene("LoseScreen");
-    }
-
-    public void Quitgame() 
-    {
-        Application.Quit();
-    }
+ 
 }
