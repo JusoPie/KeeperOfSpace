@@ -23,12 +23,14 @@ public class PlayerController : MonoBehaviour
     public float fireRate = 1.0f;
     private float nextFire = 0.0f;
 
+    
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+     
     }
 
     // Update is called once per frame
@@ -82,5 +84,7 @@ public class PlayerController : MonoBehaviour
         Instantiate(bullet, gun.transform.position, gun.transform.rotation);
 
     }
+
+    
     
 }

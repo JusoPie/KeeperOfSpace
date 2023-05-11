@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HomingEnemy : MonoBehaviour
 {
+    
     public Transform target;
     public float enemySpeed = 1f;
 
@@ -30,10 +31,11 @@ public class HomingEnemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            //playerController.TakeDamage(3);
             Destroy(gameObject);
 
-            SceneManager.LoadScene("LoseScreen");
+            //SceneManager.LoadScene("LoseScreen");
         }
     }
 }
