@@ -131,6 +131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   enemySpeed: 2.5
+  player: {fileID: 4077409430238052245, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
+  damage: 3
 --- !u!114 &5596062594868967013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +140,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6193543412995004853}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 449ec3007cb636942b480c33a60ee61c, type: 3}
   m_Name: 

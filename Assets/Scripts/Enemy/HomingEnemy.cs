@@ -9,6 +9,15 @@ public class HomingEnemy : MonoBehaviour
     public Transform target;
     public float enemySpeed = 1f;
 
+    PlayerHealth playerHealth;
+    public GameObject player;
+    public int damage = 3;
+
+    void Awake()
+    {
+        playerHealth = player.GetComponent<PlayerHealth>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +42,7 @@ public class HomingEnemy : MonoBehaviour
         {
             //Destroy(other.gameObject);
             //playerController.TakeDamage(3);
+            playerHealth.TakeDamage(damage);
             Destroy(gameObject);
 
             //SceneManager.LoadScene("LoseScreen");
