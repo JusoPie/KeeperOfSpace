@@ -11,7 +11,7 @@ public class HomingEnemy : MonoBehaviour
 
     PlayerHealth playerHealth;
     public GameObject player;
-    public int damage = 3;
+    public int damage = 30;
 
     void Awake()
     {
@@ -36,16 +36,14 @@ public class HomingEnemy : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //Destroy(other.gameObject);
-            //playerController.TakeDamage(3);
-            playerHealth.TakeDamage(damage);
             Destroy(gameObject);
+            playerHealth.TakeDamage(damage);
+            
 
-            //SceneManager.LoadScene("LoseScreen");
         }
     }
 }

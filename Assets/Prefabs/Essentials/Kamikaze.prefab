@@ -116,7 +116,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &2269990299521483371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   target: {fileID: 0}
   enemySpeed: 2.5
   player: {fileID: 4077409430238052245, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
-  damage: 3
+  damage: 30
 --- !u!114 &5596062594868967013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4077409430238052245, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
-  damage: 3
+  damage: 30
 --- !u!1 &6614829401057856221
 GameObject:
   m_ObjectHideFlags: 0

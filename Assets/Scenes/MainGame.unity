@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.00090214366, g: 0.0009184347, b: 0.00090133393, a: 1}
+  m_IndirectSpecularColor: {r: 0.00089897856, g: 0.00090548507, b: 0.000898203, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -874,7 +874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4772878491831437692, guid: 235d27fadca6bbf438c604c161a53e2e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4772878491831437693, guid: 235d27fadca6bbf438c604c161a53e2e, type: 3}
       propertyPath: enemyPrefab
@@ -6241,7 +6241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4772878491831437692, guid: 235d27fadca6bbf438c604c161a53e2e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4772878491831437693, guid: 235d27fadca6bbf438c604c161a53e2e, type: 3}
       propertyPath: enemyPrefab
@@ -6310,7 +6310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4772878491831437692, guid: 235d27fadca6bbf438c604c161a53e2e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4772878491831437693, guid: 235d27fadca6bbf438c604c161a53e2e, type: 3}
       propertyPath: enemyPrefab
@@ -6471,6 +6471,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 192427936, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 192427936, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 192427945, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 989139346, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 460976289674743285, guid: d7ce82da2b539a54184b425ea73155b5, type: 3}
       propertyPath: target
       value: 
