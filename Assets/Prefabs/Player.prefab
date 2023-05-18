@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ebd5d75a157d64c9ab72f67cd02fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 15
+  playerSpeed: 10
   hor: 0
   ver: 0
   xRange: 10
@@ -397,8 +397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f1cd4b8cb0042409edd4c2624ae43c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 10
+  currentHealth: 99
+  maxHealth: 100
 --- !u!1001 &6215611203478929329
 PrefabInstance:
   m_ObjectHideFlags: 0

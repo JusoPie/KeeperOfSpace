@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health;
+    public int currentHealth;
     public int maxHealth = 100;
 
     // Start is called before the first frame update
     void Start()
     {
-        health = maxHealth;
+        ResetHealth();
+    }
+
+    public void ResetHealth() 
+    {
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -22,8 +27,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
-        if (health <= 0)
+        currentHealth -= damage;
+        if (currentHealth <= 0)
         {
             Destroy(gameObject);
             SceneManager.LoadScene("LoseScreen");
