@@ -10,12 +10,12 @@ public class HomingEnemy : MonoBehaviour
     public float enemySpeed = 1f;
 
     PlayerHealth playerHealth;
-    public GameObject player;
+    //public GameObject player;
     public int damage = 30;
 
     void Awake()
     {
-        playerHealth = player.GetComponent<PlayerHealth>();
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
 
     // Start is called before the first frame update

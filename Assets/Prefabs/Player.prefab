@@ -399,6 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 99
   maxHealth: 100
+  healthBar: {fileID: 0}
 --- !u!1001 &6215611203478929329
 PrefabInstance:
   m_ObjectHideFlags: 0
