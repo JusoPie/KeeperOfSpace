@@ -14,11 +14,13 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         ResetHealth();
+
     }
 
     public void ResetHealth() 
     {
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
