@@ -6,6 +6,14 @@ public class EnemyBulletScript : MonoBehaviour
 {
 
     public float speed = 5f;
+
+    PlayerHealth playerHealth;
+    public int damage = 30;
+
+    void Awake()
+    {
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +30,9 @@ public class EnemyBulletScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) 
         {
-            Destroy(other.gameObject);
+            
             Destroy (gameObject);
+            playerHealth.TakeDamage(damage);
         }
     }
 }

@@ -19,9 +19,9 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Enemy")) 
+        if(other.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemyHealthComponent)) 
         {
-            Destroy(other.gameObject);
+            enemyHealthComponent.TakeDamage(1);
             Destroy(gameObject);
         }
     }

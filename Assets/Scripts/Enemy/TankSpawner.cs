@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KamikazeSpawner : MonoBehaviour
+public class TankSpawner : MonoBehaviour
 {
     [SerializeField]
     private GameObject enemyPrefab;
@@ -27,7 +27,7 @@ public class KamikazeSpawner : MonoBehaviour
 
     }
 
-    private void spawn() 
+    private void spawn()
     {
         Instantiate(enemyPrefab, transform.position, transform.rotation);
     }
