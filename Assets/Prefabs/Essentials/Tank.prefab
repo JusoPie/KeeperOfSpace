@@ -248,8 +248,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   targetObject: {fileID: 0}
-  enemySpeed: 40
+  enemySpeed: 3.12
   radius: 5
+  waitTime: 3
+  canMove: 0
 --- !u!114 &4852038925220544726
 MonoBehaviour:
   m_ObjectHideFlags: 0
