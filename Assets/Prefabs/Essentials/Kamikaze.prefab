@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  enemySpeed: 2.5
+  enemySpeed: 4
   damage: 10
 --- !u!114 &-587463615534934363
 MonoBehaviour:
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 2
+  scorevalue: 1
 --- !u!1 &6614829401057856221
 GameObject:
   m_ObjectHideFlags: 0

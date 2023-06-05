@@ -12,6 +12,8 @@ public class Blink : MonoBehaviour
 
     public GameObject[] blinkImages;
 
+    public GameObject blinkEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,6 +89,8 @@ public class Blink : MonoBehaviour
                 {
                     Vector3 blinkDestination = transform.position + blinkDirection.normalized * blinkDistance;
                     transform.position = blinkDestination;
+
+                    Instantiate(blinkEffect, transform.position, transform.rotation);
 
                 }
 

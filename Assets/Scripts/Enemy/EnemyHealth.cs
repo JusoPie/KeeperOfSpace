@@ -7,6 +7,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth = 100;
+    public int scorevalue = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
-            ScoreManager.instance.AddScore();
+            ScoreManager.instance.AddScore(scorevalue);
         }
     }
 }
