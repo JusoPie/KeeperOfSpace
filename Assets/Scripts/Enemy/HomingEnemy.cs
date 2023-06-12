@@ -13,6 +13,8 @@ public class HomingEnemy : MonoBehaviour
     //public GameObject player;
     public int damage = 30;
 
+    public GameObject explosion;
+
     void Awake()
     {
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
@@ -40,8 +42,10 @@ public class HomingEnemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
             playerHealth.TakeDamage(damage);
+
             
 
         }
