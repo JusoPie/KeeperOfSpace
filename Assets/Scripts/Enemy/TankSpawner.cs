@@ -29,6 +29,21 @@ public class TankSpawner : MonoBehaviour
 
     private void spawn()
     {
-        Instantiate(enemyPrefab, transform.position, transform.rotation);
+        if (gameObject.activeSelf)
+        {
+            Instantiate(enemyPrefab, transform.position, transform.rotation);
+        }
+        else
+        {
+            CancelInvoke("spawn");
+        }
+    }
+
+    public void respawn()
+    {
+        if (!IsInvoking("spawn"))
+        {
+            InvokeRepeating("spawn", 3.0f, spawnInterval);
+        }
     }
 }

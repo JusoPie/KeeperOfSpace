@@ -9,6 +9,7 @@ public class TankScript : MonoBehaviour
     public float enemySpeed = 1f;
     public float radius = 5f;
 
+
     [SerializeField]
     private float waitTime = 3f;
 
@@ -17,6 +18,7 @@ public class TankScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         StartCoroutine("StartOrbiting");
         target = GameObject.FindGameObjectWithTag("Player").transform;
         targetObject = GameObject.FindGameObjectWithTag("TankTarget").transform;
@@ -27,6 +29,7 @@ public class TankScript : MonoBehaviour
     {
         if (canMove == false)
         {
+            
             transform.Translate(transform.up * -enemySpeed * Time.deltaTime);
             transform.LookAt(targetObject);
         }
@@ -45,16 +48,7 @@ public class TankScript : MonoBehaviour
             transform.Rotate(-90f, 0f, 0f, Space.Self);
             transform.RotateAround(targetObject.transform.position, new Vector3(0, 0, 10), enemySpeed * Time.deltaTime);
         }
-        // Calculate the desired position in a circle around the target point
-        /*float angle = Time.time * enemySpeed;
-        Vector3 desiredPosition = targetObject.position + new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * radius;
-
-        // Move the object to the desired position
-        transform.position = desiredPosition;*/
-
-
-
-
+        
     }
 
     private IEnumerator StartOrbiting() 

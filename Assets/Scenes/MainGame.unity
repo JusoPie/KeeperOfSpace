@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.00089897856, g: 0.00090548507, b: 0.000898203, a: 1}
+  m_IndirectSpecularColor: {r: 0.00090214366, g: 0.0009184347, b: 0.00090133393, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5073,7 +5073,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160426280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15678167, y: 12.1, z: -0.06}
+  m_LocalPosition: {x: 0, y: 12.1, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5108,7 +5108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 3485801952355818941, guid: 21482bf9285bc3f49ac241f5c0ef7c9e, type: 3}
-  spawnInterval: 30
+  spawnInterval: 25
   spawnDelay: 1
 --- !u!1 &257890286 stripped
 GameObject:
@@ -5212,6 +5212,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &375794511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375794514}
+  - component: {fileID: 375794513}
+  - component: {fileID: 375794512}
+  m_Layer: 0
+  m_Name: Tank Spawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &375794512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375794511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d83c529aee8c00448c8e06c69e49d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 3485801952355818941, guid: 83e94d8b09f2d6f49a452a8766e5c4ce, type: 3}
+  spawnInterval: 30
+  spawnDelay: 1
+--- !u!114 &375794513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375794511}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ac18cdbb5f71314f812fe7b7a3572a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 3485801952355818941, guid: 21482bf9285bc3f49ac241f5c0ef7c9e, type: 3}
+  spawnInterval: 30
+  spawnDelay: 3
+--- !u!4 &375794514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375794511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.42, y: 0.73, z: -0.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &384479239
 GameObject:
@@ -11098,6 +11161,8 @@ MonoBehaviour:
   spawner2: {fileID: 257890286}
   spawner3: {fileID: 1509247837}
   tankSpawner: {fileID: 160426280}
+  tankSpawner1: {fileID: 375794511}
+  tankSpawner2: {fileID: 1837107913}
 --- !u!1 &1628572749
 GameObject:
   m_ObjectHideFlags: 0
@@ -11483,6 +11548,69 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1837107913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1837107916}
+  - component: {fileID: 1837107915}
+  - component: {fileID: 1837107914}
+  m_Layer: 0
+  m_Name: Tank Spawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1837107914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837107913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d83c529aee8c00448c8e06c69e49d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 3485801952355818941, guid: db9980386169dee4caff18d93dbf6ec4, type: 3}
+  spawnInterval: 30
+  spawnDelay: 1
+--- !u!114 &1837107915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837107913}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ac18cdbb5f71314f812fe7b7a3572a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 3485801952355818941, guid: 21482bf9285bc3f49ac241f5c0ef7c9e, type: 3}
+  spawnInterval: 30
+  spawnDelay: 3
+--- !u!4 &1837107916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837107913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.42, y: 0.73, z: -0.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1966108464
 GameObject:
   m_ObjectHideFlags: 0
@@ -11822,7 +11950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7233512409401610124, guid: f4bb40aa202e4b5449e2284451e69ccf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.15678167
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7233512409401610124, guid: f4bb40aa202e4b5449e2284451e69ccf, type: 3}
       propertyPath: m_LocalPosition.y

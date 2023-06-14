@@ -15,6 +15,8 @@ public class ScoreManager : MonoBehaviour
     public GameObject spawner2;
     public GameObject spawner3;
     public GameObject tankSpawner;
+    public GameObject tankSpawner1;
+    public GameObject tankSpawner2;
 
     int score = 0;
     int highScore = 0;
@@ -42,6 +44,7 @@ public class ScoreManager : MonoBehaviour
             spawner2.SetActive(false);
             spawner3.SetActive(false);
             tankSpawner.SetActive(true);
+
         }
 
         if (score >= 15)
@@ -55,6 +58,34 @@ public class ScoreManager : MonoBehaviour
             spawner3.SetActive(true);
             spawner3.GetComponent<KamikazeSpawner>().respawn();
             tankSpawner.SetActive(true);
+        }
+
+        if (score >= 40 && score < 53)
+        {
+            spawner.SetActive(false);
+            spawner1.SetActive(false);
+            spawner2.SetActive(false);
+            spawner3.SetActive(false);
+            tankSpawner.SetActive(false);
+            tankSpawner1.SetActive(true);
+            tankSpawner2.SetActive(true);
+
+        }
+
+        if (score >= 53)
+        {
+            spawner.SetActive(true);
+            spawner.GetComponent<KamikazeSpawner>().respawn();
+            spawner1.SetActive(true);
+            spawner1.GetComponent<KamikazeSpawner>().respawn();
+            spawner2.SetActive(true);
+            spawner2.GetComponent<KamikazeSpawner>().respawn();
+            spawner3.SetActive(true);
+            spawner3.GetComponent<KamikazeSpawner>().respawn();
+            tankSpawner.SetActive(true);
+            tankSpawner.GetComponent<TankSpawner>().respawn();
+            tankSpawner1.SetActive(false);
+            tankSpawner2.SetActive(false);
         }
     }
 }
