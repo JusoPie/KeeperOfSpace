@@ -14,6 +14,7 @@ public class HomingEnemy : MonoBehaviour
     public int damage = 30;
 
     public GameObject explosion;
+    public CameraShake cameraShake;
 
     void Awake()
     {
@@ -43,6 +44,7 @@ public class HomingEnemy : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Instantiate(explosion, transform.position, transform.rotation);
+            StartCoroutine(cameraShake.Shake(.15f, .4f));
             Destroy(gameObject);
             playerHealth.TakeDamage(damage);
 

@@ -59,27 +59,27 @@ public class Blink : MonoBehaviour
 
         if (blinks > 0)
         {
-            if (Input.GetKey(KeyCode.Mouse1))
+            if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 Vector3 blinkDirection = Vector3.zero;
 
-                if (Input.GetKeyDown(KeyCode.W))
+                if (Input.GetKey(KeyCode.W))
                 {
                     blinkDirection += Vector3.up;
                     blinks--;
                 }
-                else if (Input.GetKeyDown(KeyCode.S))
+                else if (Input.GetKey(KeyCode.S))
                 {
                     blinkDirection += Vector3.down;
                     blinks--;
                 }
 
-                if (Input.GetKeyDown(KeyCode.A))
+                if (Input.GetKey(KeyCode.A))
                 {
                     blinkDirection += Vector3.left;
                     blinks--;
                 }
-                else if (Input.GetKeyDown(KeyCode.D))
+                else if (Input.GetKey(KeyCode.D))
                 {
                     blinkDirection += Vector3.right;
                     blinks--;
