@@ -33,6 +33,11 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadScene("LoseScreen");
     }
 
+    public void EndScreen()
+    {
+        SceneManager.LoadScene("End Screen 1");
+    }
+
     public void Quitgame()
     {
         Application.Quit();

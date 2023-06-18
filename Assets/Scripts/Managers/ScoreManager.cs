@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -105,6 +106,11 @@ public class ScoreManager : MonoBehaviour
             tankSpawner.SetActive(false);
             tankSpawner.GetComponent<TankSpawner>().spawn(); 
             waspSpawner.SetActive(true);
+        }
+
+        if (score >= 100) 
+        {
+            SceneManager.LoadScene("End Screen 1");
         }
     }
 }
