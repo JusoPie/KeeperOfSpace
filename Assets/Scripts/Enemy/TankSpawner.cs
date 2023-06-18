@@ -27,7 +27,7 @@ public class TankSpawner : MonoBehaviour
 
     }
 
-    private void spawn()
+    public void spawn()
     {
         if (gameObject.activeSelf)
         {

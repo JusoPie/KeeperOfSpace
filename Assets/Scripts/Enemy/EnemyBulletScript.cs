@@ -9,6 +9,7 @@ public class EnemyBulletScript : MonoBehaviour
 
     PlayerHealth playerHealth;
     public int damage = 30;
+    public GameObject explosion;
 
     void Awake()
     {
@@ -30,7 +31,7 @@ public class EnemyBulletScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) 
         {
-            
+            Instantiate(explosion, transform.position, transform.rotation);
             Destroy (gameObject);
             playerHealth.TakeDamage(damage);
         }

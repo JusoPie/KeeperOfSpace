@@ -27,7 +27,7 @@ public class KamikazeSpawner : MonoBehaviour
 
     }
 
-    private void spawn() 
+    public void spawn() 
     {
         if (gameObject.activeSelf) 
         {
