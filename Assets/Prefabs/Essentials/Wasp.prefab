@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  teleTimer: 4
+  teleTimer: 8
   teleEffect: {fileID: 5607819269926399345, guid: 7d5523fff4a71204b9c359134c729a4f, type: 3}
 --- !u!1 &3573080944347057665
 GameObject:

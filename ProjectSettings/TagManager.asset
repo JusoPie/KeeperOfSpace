@@ -8,6 +8,7 @@ TagManager:
   - EnemyBullet
   - TankTarget
   - ScreenShake
+  - telespot
   layers:
   - Default
   - TransparentFX
