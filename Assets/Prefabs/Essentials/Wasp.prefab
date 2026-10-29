@@ -306,7 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 6193543412995004853, guid: ea7d1daf31e1d124193f6dd25fd5d0de, type: 3}
   spawnInterval: 0.7
-  spawnDelay: 1
+  spawnDelay: 1.1
 --- !u!1 &1379003770033359459
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  teleTimer: 8
+  teleTimer: 10
   teleEffect: {fileID: 5607819269926399345, guid: 7d5523fff4a71204b9c359134c729a4f, type: 3}
 --- !u!1 &3573080944347057665
 GameObject:

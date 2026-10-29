@@ -49,20 +49,18 @@ public class WaspScript : MonoBehaviour
 
         int randomSpot;
 
-        // Choose a different teleport spot
+        //Choose a new teleport spot
         do
         {
             randomSpot = Random.Range(0, _teleSpots.Length);
         }
         while (randomSpot == _lastSpot);
 
-        // Save current spot
         _lastSpot = randomSpot;
 
-        // Teleport wasp
+        //Teleport
         transform.position = _teleSpots[randomSpot].transform.position;
 
-        // Spawn teleport effect
         Instantiate(teleEffect, transform.position, transform.rotation);
     }
 }
